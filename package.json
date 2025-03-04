@@ -17,6 +17,11 @@
     "native",
     "library"
   ],
+  "files": [
+    "dist",
+    "android",
+    "ios"
+  ],
   "author": "Your Name",
   "license": "MIT",
   "peerDependencies": {
