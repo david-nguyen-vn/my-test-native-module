@@ -5,10 +5,18 @@ package org.example
 
 import kotlin.test.Test
 import kotlin.test.assertTrue
+import kotlin.test.assertEquals
 
-class LibraryTest {
+class MyLibraryTest {
     @Test fun someLibraryMethodReturnsTrue() {
-        val classUnderTest = Library()
+        val classUnderTest = MyLibrary()
         assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'")
+    }
+
+    @Test
+    fun testGreet() {
+        val myLibrary = MyLibrary()
+        val result = myLibrary.greet("World")
+        assertEquals("Hello, World!", result)
     }
 }

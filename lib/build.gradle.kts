@@ -45,3 +45,16 @@ tasks.named<Test>("test") {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
 }
+
+sourceSets {
+    getByName("main") {
+        java.srcDirs("src/main/kotlin")
+    }
+    getByName("test") {
+        java.srcDirs("src/test/kotlin")
+    }
+}
+
+dependencies {
+    testImplementation(kotlin("test"))
+}
